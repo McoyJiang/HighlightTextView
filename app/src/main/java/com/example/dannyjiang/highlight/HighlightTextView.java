@@ -138,7 +138,12 @@ public class HighlightTextView extends AppCompatTextView {
         stopHighlight();
     }
 
-
+    /**
+     * highlight a specific text in this TextView
+     * @param textToHighlight   the text need highlighting
+     * @param timeDelay   time of delay to start highlighting, should be in milliseconds
+     * @param duration    the time duration of highlighting, should be in milliseconds
+     */
     public void highlightText(String textToHighlight, long timeDelay, int duration) {
         Message msg = Message.obtain(mediaCallbackHandler, MediaCallbackHandler.HIGH_LIGHT, textToHighlight);
         msg.arg1 = duration;

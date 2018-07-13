@@ -2,6 +2,7 @@ package com.example.dannyjiang.highlight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class HighlightActivity extends AppCompatActivity {
 
@@ -13,6 +14,10 @@ public class HighlightActivity extends AppCompatActivity {
         setContentView(R.layout.activity_highlight);
 
         highlightTextView = findViewById(R.id.highlight);
-        highlightTextView.highlight(true);
+        highlightTextView.highlight(false);
+    }
+
+    public void highlightText(View view) {
+        highlightTextView.highlightText("Decorating", 300, 2000);
     }
 }
