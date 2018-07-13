@@ -13,6 +13,6 @@ public class HighlightActivity extends AppCompatActivity {
         setContentView(R.layout.activity_highlight);
 
         highlightTextView = findViewById(R.id.highlight);
-        //highlightTextView.highlight(true);
+        highlightTextView.highlight(true);
     }
 }
