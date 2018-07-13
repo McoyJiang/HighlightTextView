@@ -1,0 +1,2 @@
+# HighlightTextView
+高亮显示TextView的部分text, 并实现可点击TextView中的单个text
