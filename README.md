@@ -48,7 +48,7 @@ public class HighlightActivity extends AppCompatActivity {
 ```
 highlightTextView.highlight(true);
 ```
-当传入 `true` 时则会循环高亮播放，否则播放完一遍之后自动停止。 以上效果如下
+当传入 `true` 时则会循环高亮播放，如果是`false`则会播放完一遍之后自动停止。 传入`true`的代码效果如下
 <img src="https://github.com/McoyJiang/HighlightTextView/blob/master/IMAGES/highlight.gif">
 
 **单独将某一个text高亮显示**
@@ -57,7 +57,10 @@ highlightTextView.highlight(true);
 ```
 highlightTextView.highlightText("Decorating", 300, 2000);
 ```
-其中highlightText方法有3个需要传入的参数，分别代表的意思是需要高亮的text、显示高亮之前的时间delay、高亮的时间(duration). <br>
+其中highlightText方法有3个需要传入的参数，分别代表的意思是：<br>
+1 需要高亮的text
+2 显示高亮之前的时间delay
+3 高亮的时间(duration). <br>
 因此上述代码的意思将"Decorating"字符在300毫秒之后，高亮显示2秒钟. 效果如下
 <img src="https://github.com/McoyJiang/HighlightTextView/blob/master/IMAGES/highlightText.gif">
 
@@ -72,3 +75,11 @@ highlightTextView.setOnWordClickListener(new HighlightTextView.OnWordClickListen
             }
         });
 ```
+
+**其它设置**
+
+此外 `HighlightTextView` 还有一些其它设置可以使用<br>
+`setTextHighlightColor` 设置用来高亮text的颜色<br>
+`setCaseInsensitive` 设置是否大小写敏感<br>
+`setHighlightForever` 设置点击某一text高亮之后是否永久高亮，如果传入的参数为false，则点击之后1秒钟会自动恢复<br>
+`stopHighlight` 当调用highlight(true)方法循环高亮播放时，可以调用此stopHighlight来停止<br>
