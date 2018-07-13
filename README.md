@@ -42,6 +42,11 @@ public class HighlightActivity extends AppCompatActivity {
 ```
 
 **自动循环高亮播放TextView中的各个text内容**
-
+添加循环高亮播放效果，只要在初始化之后添加如下一行代码即可实现
+```
+highlightTextView.highlight(true);
+```
+当传入 `true` 时则会循环高亮播放，否则播放完一遍之后自动停止。 以上效果如下
+<img src="https://github.com/McoyJiang/HighlightTextView/blob/master/IMAGES/highlight.gif">
 
 **点击并高亮某一个TextView中的text**
