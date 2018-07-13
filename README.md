@@ -20,6 +20,8 @@ activity_highlight.xml
 
 </FrameLayout>
 ```
+HighlightTextView 显示的内容为 “Decorating TextView via SpannableString in Android”， 如下所示
+
 
 HighlightActivity.java
 
