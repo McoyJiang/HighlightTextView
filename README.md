@@ -21,7 +21,7 @@ activity_highlight.xml
 </FrameLayout>
 ```
 HighlightTextView 显示的内容为 “Decorating TextView via SpannableString in Android”， 如下所示
-
+![image](https://github.com/McoyJiang/HighlightTextView/raw/master/IMAGES/WechatIMG1.jpeg)
 
 HighlightActivity.java
 
